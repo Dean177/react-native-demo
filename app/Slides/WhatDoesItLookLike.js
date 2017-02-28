@@ -6,21 +6,8 @@ import { sapGreen } from '../styling'
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-    flex: 1,
+    padding: 5,
   },
-  titleText: {
-    fontSize: 20,
-    margin: 10,
-    textAlign: 'center',
-  },
-  instructions: {
-    color: '#333333',
-    textAlign: 'center',
-    marginBottom: 5,
-  },
-
 })
 
 const exampleText = `import React from 'react'
@@ -39,7 +26,7 @@ export const OtherComponent = () =>
 `
 
 const WhatDoesItLookLike = () =>
-  <Slide color={sapGreen}>
+  <Slide color={sapGreen} style={styles.container}>
     <CodeExample>{exampleText}</CodeExample>
   </Slide>
 

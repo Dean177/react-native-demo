@@ -11,6 +11,7 @@
     "lodash": "4.17.4",
     "lottie-react-native": "1.0.6",
     "react": "15.4.2",
+    "react-motion": "^0.4.7",
     "react-native": "0.41.2",
     "react-native-camera": "0.6",
     "react-navigation": "1.0.0-beta.5"

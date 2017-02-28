@@ -30,18 +30,18 @@ const styles = StyleSheet.create({
   }
 })
 
-export default class UsedBy extends Component {
-  render() {
-    const { height, width } = Dimensions.get('window')
-    const imageDimension = width / 2
-    return (
-      <ScrollView contentContainerStyle={styles.wrapper} style={[styles.content, { height }]}>
-        {map(companies, (image, company) =>
-          <View style={styles.company} key={company}>
-            <Image source={image} style={[styles.image, { height: imageDimension, width: imageDimension }]}/>
-          </View>
-        )}
-      </ScrollView>
-    )
-  }
+const UsedBy = () => {
+  const { height, width } = Dimensions.get('window')
+  const imageDimension = width / 2
+  return (
+    <ScrollView contentContainerStyle={styles.wrapper} style={[styles.content, { height }]}>
+      {map(companies, (image, company) =>
+        <View style={styles.company} key={company}>
+          <Image source={image} style={[styles.image, { height: imageDimension, width: imageDimension }]}/>
+        </View>
+      )}
+    </ScrollView>
+  )
 }
+
+export default UsedBy
