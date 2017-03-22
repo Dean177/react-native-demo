@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
 
 const Debugging = () => {
   console.log('bad result')
+
   return (
     <Slide color={spaceCadet} style={styles.container}>
       <View>

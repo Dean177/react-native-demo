@@ -17,7 +17,7 @@ export default class WhyUseIt extends Component {
         </Ul>
         <T>Developer Experience</T>
         <Ul>
-          <T>First class IDE support</T>
+          <T>First class IDE support great</T>
           <T>Develop on real devices</T>
           <T>Live code reloading</T>
           <T>You can develop on windows machines*</T>

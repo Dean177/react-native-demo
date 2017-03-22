@@ -68,10 +68,7 @@ const PanResponderExample = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
-        <StaggeredMotion
-          defaultStyles={range(5).map(() => initialPosition)}
-          styles={this.getStyles}
-        >
+        <StaggeredMotion defaultStyles={range(5).map(() => initialPosition)} styles={this.getStyles}>
           {balls =>
             <View>
               {balls.map(({ x, y }, i) =>

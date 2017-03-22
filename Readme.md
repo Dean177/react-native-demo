@@ -1,17 +1,15 @@
-drag the LottieReactNative.xcodeproj from node_modules/lottie-react-native/lib/ios into the Libraries folder of my app
-I clicked on it in my Libaries folder and clicked on the target of LottieReactNative, went to the Build Settings and in 
-that header search path I added:
-$(SRCROOT)/../../../react-native/React
-$(SRCROOT)/../../../react-native/ReactCommon
-Then I went to my app target linked Frameworks and Libraries and added libLottieReactNative.a from the list
-you get if you press +.
+# React Native Appshow
 
-At this point it couldnt resolve #import <Lottie/Lottie.h>.
+The slides / app I made to accompany my talk on [React Native](https://facebook.github.io/react-native/)
 
-So I cloned https://github.com/airbnb/lottie-ios to a folder not in my app project. I then dragged the Lottie.xcodeproj into my Libraries group and added Lottie.framework to the linked Frameworks and Libraries.
+![Pan responder example](cat-pan-responder.gif)
 
-Also, manually link the binary via
-- Targets
-- Your app
-- Embedded Binaries
-- Lottie.framework
+## Running
+- Follow the instructions at [https://facebook.github.io/react-native/docs/getting-started.html] for your platform of choice
+- `npm install`
+- `npm run ios` or `npm run android`
+
+### Note
+I haven't attempted to run this on anything but an iPhone 7, it builds for android so should run fine.
+
+Devices with lower resolution screens are likely to have content which runs off the visible screen but is non-scrollable. This can be remedied by changing the relevant slides to use `ScrollView` rather than `View`
