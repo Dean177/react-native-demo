@@ -1,6 +1,6 @@
 import { clamp } from 'lodash'
 import React, { Component } from 'react'
-import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 import WhatIsIt from './Slides/WhatIsIt'
 import Overview from './Slides/Overview'
@@ -9,7 +9,6 @@ import WhyUseIt from './Slides/WhyUseIt'
 import PanResponder from './Slides/PanResponder'
 import AvoidingTheAppStore from './Slides/AvoidingTheAppStore'
 import UsedBy from './Slides/UsedBy'
-import Animations from './Slides/Animations'
 import LiveExample from './Slides/LiveExample'
 import PullToRefresh from './Slides/PullToRefresh'
 import KeyboardAvoiding from './Slides/KebyoardAvoiding'
@@ -31,7 +30,6 @@ const Slides = [
   KeyboardAvoiding,
   PullToRefresh,
   PanResponder,
-  // Animations,
   LiveExample,
   WhatAboutTheRest,
   AvoidingTheAppStore,
